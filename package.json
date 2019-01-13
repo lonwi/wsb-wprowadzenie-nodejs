@@ -7,7 +7,7 @@
     "dev": "run-p dev:client dev:client",
     "dev:client": "webpack-dev-server",
     "dev:server": "nodemon index.js",
-    "build": "PRODUCTION=true webpack",
+    "build": "PRODUCTION=true webpack"
   },
   "repository": {
     "type": "git",
