@@ -1,11 +1,11 @@
-var express = require('express');
-var proxy = require('express-http-proxy');
-var path = require('path');
-var PORT = 8080;
+const express = require('express');
+const proxy = require('express-http-proxy');
+const path = require('path');
+const PORT = 8080;
 
-var app = express();
+const app = express();
 
-var NOTES_URL = '/notes';
+const NOTES_URL = '/notes';
 
 app.get(NOTES_URL, (req, res) => {
     res.json({
@@ -39,7 +39,7 @@ if (process.env['PRODUCTION']) {
 }
 app.get('*', frontend);
 
-app.listen(PORT, function () {
+app.listen(PORT, () => {
     console.log('listening on port', PORT);
     console.log('Wojtek Jestes Super Chłopak!');
 });
