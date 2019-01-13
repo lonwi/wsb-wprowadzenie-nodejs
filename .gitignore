@@ -1,3 +1,4 @@
 node_modules
 www
 *.swp
+.c9/
