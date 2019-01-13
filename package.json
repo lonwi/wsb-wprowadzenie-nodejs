@@ -1,0 +1,22 @@
+{
+  "name": "nodejs_cwiczenia",
+  "version": "1.0.0",
+  "description": "Ćwiczeni WSB NodeJS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lonwi/wsb-wprowadzenie-nodejs.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Wojciech Bubolka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lonwi/wsb-wprowadzenie-nodejs/issues"
+  },
+  "homepage": "https://github.com/lonwi/wsb-wprowadzenie-nodejs#readme"
+}
