@@ -4,7 +4,7 @@
   "description": "Ćwiczeni WSB NodeJS",
   "main": "index.html",
   "scripts": {
-    "dev": "run-p dev:client dev:client",
+    "dev": "run-p dev:client dev:server",
     "dev:client": "webpack-dev-server",
     "dev:server": "nodemon index.js",
     "build": "PRODUCTION=true webpack"
