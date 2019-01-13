@@ -2,6 +2,7 @@
 
 var HTMLWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var isProduction = Boolean(process.env['PRODUCTION']);
 
 module.exports = {
     entry : './src/main.js',
@@ -17,7 +18,7 @@ module.exports = {
             from: './src/style.css'
         }])
     ],
-    mode: 'development',
+    mode: isProduction ? 'production' : 'development',
     devServer: {
         historyApiFallback: true,
         contentBase: './',
@@ -27,6 +28,6 @@ module.exports = {
         public: "7c73513cf72742ecbd14908b229824ec.vfs.cloud9.eu-west-1.amazonaws.com"
     },
     optimization: {
-        minimize: Boolean(process.env['PRODUCTION'])
+        minimize: isProduction
     }
 }
