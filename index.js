@@ -5,11 +5,31 @@ var PORT = 8080;
 
 var app = express();
 
-// app.get('*', function(req, res) {
-//     res.json({
-//         hello: 'world'
-//     });
-// });
+var NOTES_URL = '/notes';
+
+app.get(NOTES_URL, (req, res) => {
+    res.json({
+        notes: []
+    });
+});
+
+app.post(NOTES_URL, (req, res) => {
+    res.json({
+        status: 'added'
+    });
+});
+
+app.delete(NOTES_URL, (req, res) => {
+    res.json({
+        status: 'deleted'
+    });
+});
+
+app.get('*', function(req, res) {
+    res.json({
+        hello: 'world'
+    });
+});
 
 var frontend;
 if (process.env['PRODUCTION']) {
