@@ -25,5 +25,8 @@ module.exports = {
         //https: true,
         port: process.env.PORT,
         public: "7c73513cf72742ecbd14908b229824ec.vfs.cloud9.eu-west-1.amazonaws.com"
+    },
+    optimization: {
+        minimize: Boolean(process.env['PRODUCTION'])
     }
 }
