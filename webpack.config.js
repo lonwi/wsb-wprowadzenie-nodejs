@@ -23,7 +23,7 @@ module.exports = {
         historyApiFallback: true,
         contentBase: './',
         host: process.env.IP,
-        https: true,
+//        https: false,
         port: process.env.PORT,
         public: "7c73513cf72742ecbd14908b229824ec.vfs.cloud9.eu-west-1.amazonaws.com"
     },
